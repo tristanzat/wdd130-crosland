@@ -1,5 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Jura:wght@300..700&display=swap');
+
+* {
+    font-family: 'Jura', sans-serif;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BBH Sans Bartle', sans-serif;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position-x: center;
+}
+
 .header-banner {
     background-image: url("../images/header-banner.png");
     width: 100%;
     height: 300px;
+    background-size: cover;
+    background-position-y: center;
+}
+
+footer {
+    background-image: url("../images/footer-banner.jpg");
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position-y: center;
 }
