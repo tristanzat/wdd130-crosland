@@ -33,8 +33,9 @@ header {
 
 .header-banner {
   background-image: url("../images/header-banner.png");
-  background-size: cover;
+  background-size: auto 100%;
   background-position: center;
+  background-repeat: repeat-x;
   height: 300px;
   display: flex;
   align-items: center;
@@ -228,8 +229,9 @@ details p {
 /* Footer */
 footer {
   background-image: url("../images/footer-banner.jpg");
-  background-size: cover;
+  background-size: auto 100%;
   background-position: center;
+  background-repeat: repeat-x;
   height: 200px;
   display: flex;
   align-items: center;
