@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Jura:wght@300..700&display=swap");
 
+/* Colors:
+Primary: #000000 (black)
+Secondary: #ffffff (white)
+Accent 1: #b80f08 (red)
+Accent 2: #0000ff (blue)
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -98,7 +105,7 @@ nav a:hover::before {
 }
 
 nav a:hover {
-  text-shadow: 0 0 8px #ff4c4c, 0 0 12px #ff4c4c;
+  text-shadow: 0 0 8px #b80f08, 0 0 12px #b80f08;
 }
 
 /* Hero Banner */
@@ -118,8 +125,8 @@ nav a:hover {
   max-width: 800px;
   margin: 40px auto;
   padding: 20px;
-  background-color: rgba(20, 20, 20, 0.8);
-  border-left: 5px solid #ff4c4c;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-left: 5px solid #b80f08;
 }
 
 /* Feature Panels */
@@ -132,12 +139,12 @@ nav a:hover {
 }
 
 .feature-panel {
-  background-color: rgba(30, 30, 30, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 20px;
   width: 300px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(255, 76, 76, 0.3);
+  box-shadow: 0 0 10px rgba(184, 15, 8, 0.4);
 }
 
 .feature-panel img {
@@ -154,7 +161,7 @@ nav a:hover {
 
 .subtitle {
   font-style: italic;
-  color: #ff9999;
+  color: #0000ff;
   margin-bottom: 10px;
 }
 
@@ -177,15 +184,15 @@ main h2 {
   margin-top: 60px;
   margin-bottom: 20px;
   font-size: 1.8rem;
-  border-left: 5px solid #ff4c4c;
+  border-left: 5px solid #b80f08;
   padding-left: 15px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* FAQ Expandable Panels */
 details {
-  background-color: rgba(30, 30, 30, 0.85);
-  border: 1px solid #ff4c4c;
+  background-color: rgba(0, 0, 0, 0.85);
+  border: 1px solid #b80f08;
   border-radius: 6px;
   margin: 15px auto;
   padding: 15px 20px;
@@ -194,7 +201,7 @@ details {
 }
 
 details:hover {
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
 }
 
 summary {
@@ -211,7 +218,7 @@ summary::after {
   right: 0;
   top: 0;
   font-size: 1.2rem;
-  color: #ff4c4c;
+  color: #b80f08;
   transition: transform 0.3s ease;
 }
 
@@ -241,4 +248,127 @@ footer {
 
 footer p {
     background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Wanted Ad Container */
+.wanted-ad-container {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  z-index: 1000;
+  transform: translateX(260px); /* Start mostly offscreen (adjust based on width) */
+  transition: transform 0.4s ease;
+}
+
+.wanted-ad-container:hover {
+  transform: translateX(0); /* Slide fully onscreen on hover */
+}
+
+/* Wanted Ad Panel */
+.wanted-ad {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-left: 5px solid #b80f08;
+  padding: 20px;
+  box-shadow: -4px 0 12px rgba(184, 15, 8, 0.5);
+  font-size: 0.95rem;
+  position: relative;
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  font-size: 1.5rem;
+  color: #b80f08;
+  cursor: pointer;
+}
+
+.wanted-ad p {
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Wanted Suspect Block */
+.wanted-suspect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border: 2px solid #b80f08;
+  border-radius: 8px;
+  max-width: 260px;
+}
+
+/* Suspect Image */
+.wanted-suspect .wanted-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border: 2px solid #0000ff;
+}
+
+/* Suspect Name */
+.wanted-suspect h3 {
+  font-size: 1.3rem;
+  font-family: 'BBH Sans Bartle', sans-serif;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wanted-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 12px 16px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(184, 15, 8, 0.5);
+}
+
+.wanted-header .logo {
+  height: 50px;
+  width: auto;
+  flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.wanted-header h2 {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+
+/* Report Button */
+.report-btn {
+  display: block;
+  margin: 15px auto 0;
+  padding: 10px 20px;
+  background-color: #b80f08;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.report-btn:hover {
+  background-color: #0000ff;
 }
