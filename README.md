@@ -1,9 +1,12 @@
 # wdd130-crosland
+
 Spencer Crosland's WDD130 final site.
 
-My web address is:
-tristanzat.github.io/wdd130-crosland/
+## Web Address
 
-My junior developers are:
-Dylan Steinhour
-Jessica Snedecor
+[tristanzat.github.io/wdd130-crosland/](https://tristanzat.github.io/wdd130-crosland/)
+
+## Junior Developers
+
+- Dylan Steinhour
+- Jessica Snedecor
