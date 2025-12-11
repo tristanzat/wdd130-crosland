@@ -231,6 +231,7 @@ details p {
   margin-top: 10px;
   line-height: 1.6;
   font-size: 1rem;
+  color: #0000ff;
 }
 
 /* Footer */
@@ -380,7 +381,7 @@ footer p {
 .planet-hero {
   text-align: center;
   padding: 60px 20px;
-  background-color: rgba(0, 0, 0, 0.6) /*correct color??*/
+  background-color: rgba(0, 0, 0, 0.6);
   margin-top: 20px;
 }
 
